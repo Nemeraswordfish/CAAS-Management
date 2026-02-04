@@ -1,0 +1,8 @@
+Rule tuple: RuleTuple(data_principal='dp-001', domain='finance', rules=['consent_required', 'withdrawal_supported', 'renewal_required'], receiving_entity='Acme Bank')
+KYU: KYUResult(trust_score=0.9, explanation='organizational email domain, organizational purpose')
+Compliance: ComplianceResult(sensitivity=<Sensitivity.HIGH: 'high'>, explanation='Matched sensitive attributes: income')
+Decision: Decision(strategy=<DecisionStrategy.MASK: 'mask'>, trust_score=0.9, sensitivity=<Sensitivity.HIGH: 'high'>, anonymization_score=0.6, legal_basis='Explicit consent required for high-sensitivity data', rationale='High sensitivity data masked; trust score supports access')
+Consent: ConsentArtifact(artifact_id='1c466c0d-fcab-4442-9610-702dd34eb97c', data_principal_id='dp-001', purpose_id='loan-underwriting', granted_at=datetime.datetime(2026, 2, 4, 10, 17, 32, 529822), expires_at=datetime.datetime(2027, 2, 4, 10, 17, 32, 529822), active=True, languages=['en', 'hi'], cookie_preferences={'essential': True, 'marketing': False})
+Audit hash: 1b20782d03c75ad36f1085d3ed63cc816c9f2bce876f5b60a5ca6b64da52d2a9
+Interoperability: Pushed consent update to https://api.acmebank.example/consent with {'artifact_id': '1c466c0d-fcab-4442-9610-702dd34eb97c', 'status': 'active'}
+Grievance: fba90948-de55-433b-a8f5-f8f6c44111a6

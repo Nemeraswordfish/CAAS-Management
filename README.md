@@ -79,3 +79,19 @@ This repo now includes a lightweight Python prototype implementing the required 
 ```bash
 PYTHONPATH=src python -m caas_management.main
 ```
+
+## Web Demo (Browser-Based)
+Use the built-in web demo to submit requests through a browser form and view the agentic decision output.
+
+### Step-by-step
+1. Start the demo server:
+   ```bash
+   PYTHONPATH=src python -m caas_management.webapp
+   ```
+2. Open your browser to:
+   ```text
+   http://localhost:8000
+   ```
+3. Update any fields (requester email, purpose, domain, attributes, etc.).  
+4. Click **Run Agentic Decision** to see the perception, KYU, compliance, and orchestration outputs.
+5. Stop the server with `Ctrl+C` when finished.
